@@ -17,7 +17,10 @@ defmodule Forecastwebapp.Mixfile do
   end
 
   defp deps do
-    [ { :cowboy, github: "extend/cowboy" },
-      { :dynamo, "~> 0.1.0-dev", github: "elixir-lang/dynamo" } ]
+    [
+      { :cowboy, github: "extend/cowboy" },
+      { :dynamo, "~> 0.1.0-dev", github: "elixir-lang/dynamo" },
+      { :forecast, github: "paulanthonywilson/forecast"},
+      ]
   end
 end
