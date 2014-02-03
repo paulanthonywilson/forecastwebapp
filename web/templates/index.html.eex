@@ -8,6 +8,17 @@
 </head>
 <body>
 <h1>Hello matey</h1>
+
+<p> Choose some presets:
+<select id="presets">
+  <option value=""></option>
+  <option value="55.9486 -3.2008">Edinburgh Castle</option>
+  <option value="51.5073 -0.1276">Charing Cross, London</option>
+  <option value="56.3757 -3.8426">Crieff Hyrdo, Crieff</option>
+  <option value="51.9965 -0.7428">Bletchley Park</option>
+</select>
+or use <button id="current_location">current location</button></p>
+
 <form action="/nearest" method="get">
   <ol>
     <li>
@@ -28,16 +39,6 @@
   </ol>
 </form>
 
-<p> Choose some presets:
-<select id="presets">
-  <option value=""></option>
-  <option value="55.9486 -3.2008">Edinburgh Castle</option>
-  <option value="51.5073 -0.1276">Charing Cross, London</option>
-  <option value="56.3757 -3.8426">Crieff Hyrdo, Crieff</option>
-  <option value="51.9965 -0.7428">Bletchley Park</option>
-</select>
-</p>
-<p>Or use <button id="current_location">current location</button></p>
 
 <table>
   <thead>
