@@ -3,12 +3,12 @@
 <head>
 <title><%= @title %></title>
 <link rel="shortcut icon" href="/static/favicon.ico" />
-<script async="async" type="text/javascript" src="/static/jquery.min.js"></script>
-<script async="async" type="text/javascript" src="/static/geolocate.js"></script>
+<script type="text/javascript" src="/static/jquery.min.js"></script>
+<script type="text/javascript" src="/static/geolocate.js"></script>
 </head>
 <body>
 <h1>Hello matey</h1>
-<form action="/" method="get">
+<form action="/nearest" method="get">
   <ol>
     <li>
     <label for="latitude">Latitude</label>
@@ -38,5 +38,33 @@
 </select>
 </p>
 <p>Or use <button id="current_location">current location</button></p>
+
+<table>
+  <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Distance</th>
+    <th>Unitary Authority</th>
+    <th>Region</th>
+    <th>Elevation</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+  </thead>
+  <tbody>
+  <%= lc site inlist @sites do %>
+  <tr>
+    <td><%=site[:id] %></td>
+    <td><%=site[:name] %></td>
+    <td><%=site[:distance] %></td>
+    <td><%=site[:unitaryAuthArea] %></td>
+    <td><%=site[:region] %></td>
+    <td><%=site[:elevation] %></td>
+    <td><%=site[:latitude] %></td>
+    <td><%=site[:longitude] %></td>
+  </tr>
+  <% end %>
+  </tbody>
+</table>
+
 </body>
 </html>
