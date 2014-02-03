@@ -12,12 +12,15 @@ defmodule Forecastwebapp.Mixfile do
 
   # Configuration for the OTP application
   def application do
-    [ applications: [:cowboy, :dynamo],
+    [ applications: [:cowboy, :dynamo, :httpotion],
       mod: { Forecastwebapp, [] } ]
   end
 
   defp deps do
-    [ { :cowboy, github: "extend/cowboy" },
-      { :dynamo, "~> 0.1.0-dev", github: "elixir-lang/dynamo" } ]
+    [
+      { :cowboy, github: "extend/cowboy" },
+      { :dynamo, "~> 0.1.0-dev", github: "elixir-lang/dynamo" },
+      { :forecast, github: "paulanthonywilson/forecast"},
+      ]
   end
 end
