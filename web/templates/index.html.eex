@@ -9,7 +9,7 @@
 <body>
 <script type="text/javascript" src="/static/jquery.min.js"></script>
 <script src="/static/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/static/geolocate.js"></script>
+<script type="text/javascript" src="/static/geolocate.js?393939393"></script>
 <div class="container">
 <h1>Hello matey</h1>
 
