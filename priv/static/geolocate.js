@@ -16,6 +16,7 @@ $(function(){
       latitude.val(position.coords.latitude);
       longitude.val(position.coords.longitude);
     });
+    return false;
   });
 });
 
