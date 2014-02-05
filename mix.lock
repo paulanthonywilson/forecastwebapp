@@ -5,7 +5,7 @@
   "forecast": {:git, "git://github.com/paulanthonywilson/forecast.git", "c12eaf53d268ccf932df366858dc5183c0caa494", []},
   "httpotion": {:git, "git://github.com/myfreeweb/httpotion.git", "f9407c497ce8e71ebea8cf94d08b093f90afa5bb", []},
   "ibrowse": {:git, "git://github.com/cmullaparthi/ibrowse.git", "d824491d37449763ac44398f8494731e0c1418c1", []},
-  "jsonex": {:git, "git://github.com/paulanthonywilson/jsonex.git", "aa40a3c997954a111b53e477e49b48add7a47f50", []},
+  "jsonex": {:git, "git://github.com/paulanthonywilson/jsonex.git", "107699b55a62af0fe2975fc126fc2e81b7d99022", []},
   "jsx": {:git, "git://github.com/talentdeficit/jsx.git", "cb14b92a228e51f7bdcaa7eb17f035e4a5c0b47d", [tag: "v1.3.3"]},
   "meck": {:git, "git://github.com/eproxus/meck.git", "917690864617cb9a565e58484c73275a7b40a997", [tag: "0.8"]},
   "mime": {:git, "git://github.com/dynamo/mime.git", "7e56a3dd5692afcd39c9797ae2898c5841967098", []},
