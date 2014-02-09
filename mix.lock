@@ -2,7 +2,7 @@
   "cowlib": {:git, "git://github.com/extend/cowlib.git", "63298e8e160031a70efff86a1acde7e7db1fcda6", [ref: "0.4.0"]},
   "dynamo": {:git, "git://github.com/elixir-lang/dynamo.git", "5f45a150a914c86cf17f2b69c158ef5987884664", []},
   "ex_doc": {:git, "git://github.com/elixir-lang/ex_doc.git", "aecbe8cf755fc81d76e2924d69a33642b7945af9", []},
-  "forecast": {:git, "git://github.com/paulanthonywilson/forecast.git", "c12eaf53d268ccf932df366858dc5183c0caa494", []},
+  "forecast": {:git, "git://github.com/paulanthonywilson/forecast.git", "db5f725a0c1770c4e51fb0a555b0f2f48727f354", []},
   "httpotion": {:git, "git://github.com/myfreeweb/httpotion.git", "f9407c497ce8e71ebea8cf94d08b093f90afa5bb", []},
   "ibrowse": {:git, "git://github.com/cmullaparthi/ibrowse.git", "d824491d37449763ac44398f8494731e0c1418c1", []},
   "jsonex": {:git, "git://github.com/paulanthonywilson/jsonex.git", "107699b55a62af0fe2975fc126fc2e81b7d99022", []},

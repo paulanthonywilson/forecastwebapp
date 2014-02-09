@@ -1,0 +1,42 @@
+<% import Forecastwebapp.Helpers %>
+
+<p><a href="/">Site list</a></p>
+<h1><%= @forecast.location.name %></h1>
+
+<table class="table">
+  <caption><%= @forecast.location.name %>, <%= @forecast.location.country %>. 
+    lat:<%=@forecast.location.latitude %>, lon: <%=@forecast.location.longitude %>.
+    elevation: <%= @forecast.location.elevation %>m
+    Forecast at <%= format_date_time(@forecast.forecast_date_time) %>
+  </caption>
+  <thead>
+    <th>When</th>
+    <th>Chance of precipitation</th>
+    <th>Temperature</th>
+    <th>Feels like</th>
+    <th>Wind speed</th>
+    <th>Gust</th>
+    <th>Humidity</th>
+    <th>Visibility</th>
+    <th>Max UV</th>
+    <th>Weather type</th>
+  </thead>
+  <tbody>
+  <%= lc f inlist @forecast.forecasts do %>
+  <tr>
+    <td><%= f.datetime |> format_date_time %></td>
+    <td><%= f.chance_precipitation %>%</td>
+    <td><%= f.temperature %>C</td>
+    <td><%= f.feels_like_temperature %>C</td>
+    <td><%= f.wind_speed %>mph</td>
+    <td><%= f.wind_gust %>mph</td>
+    <td><%= f.screen_relative_humidity %>%</td>
+    <td><%= f.visibility %></td>
+    <td><%= f.max_uv_index %></td>
+    <td><%= f.weather_type %></td>
+  </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<p><a href="/">Site list</a></p>

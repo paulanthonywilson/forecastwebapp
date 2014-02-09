@@ -5,8 +5,9 @@ defmodule ApplicationRouter do
     # Pick which parts of the request you want to fetch
     # You can comment the line below if you don't need
     # any of them or move them to a forwarded router
-    conn.fetch([:cookies, :params])
+    conn = conn.assign(:layout, "main")
     # conn = conn.assign(:title, "Data from the Met Office")
+    conn.fetch([:cookies, :params])
   end
 
   # It is common to break your Dynamo into many
@@ -31,4 +32,14 @@ defmodule ApplicationRouter do
     render conn, "index.html"
 
   end
+
+  get "/5day" do
+    id = conn.params[:id]
+    case Forecast.site_5day_forecast(id) do
+      {:ok, forecast} -> conn = conn.assign(:forecast, forecast)
+    end
+    render conn, "5day.html"
+
+  end
+
 end
