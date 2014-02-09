@@ -3,7 +3,6 @@ $(function(){
   var latitude = $('#latitude');
   var longitude= $('#longitude');
   var geoloader = $('#geoloader');
-  geoloader.hide()
 
   $('#presets').change(function(){
     var lonlat = presets.val().split(' ');

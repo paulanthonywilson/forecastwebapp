@@ -12,7 +12,7 @@
     </select>
     <label for="current_location" class="sr-only"> or use </label>
     <button id="current_location" class="form-control">current location</button>
-    <img src="/static/ajax-loader.gif" alt="loader" id="geoloader"></img>
+    <img src="/static/ajax-loader.gif" alt="loader" id="geoloader" style="display:none;"></img>
   </div>
 </form>
 

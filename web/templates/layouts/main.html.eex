@@ -9,7 +9,7 @@
 <body>
 <script type="text/javascript" src="/static/jquery.min.js"></script>
 <script src="/static/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/static/geolocate.js?393939393"></script>
+<script type="text/javascript" src="/static/geolocate.js?09283"></script>
 <div class="container">
   <%= content_for(:template) %>
 </div>
